@@ -13,9 +13,11 @@ public class MyWebBinding implements WebBindingInitializer {
 	@Override
 	public void initBinder(WebDataBinder binder, WebRequest request) {
 		// SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat dateTimeFormat = new SimpleDateFormat(
+				"yyyy-MM-dd HH:mm:ss");
 
-		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateTimeFormat, true));
+		binder.registerCustomEditor(Date.class, new CustomDateEditor(
+				dateTimeFormat, true));
 	}
 
 }

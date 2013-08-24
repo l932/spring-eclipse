@@ -20,7 +20,7 @@
      	     修改spring-servlet.xml里面的数据库连接配置（第33－35行），如下：
      	     <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.2.245:1521:MTDC"/>//数据库链接地址
      	     <property name="user" value="clw"/>//数据库用户名
-     	     <property name="password" value="clw"/>//数据库密码 
+     	     <property name="password" value="clw"/>//数据库密码
 
 2.   版本历史：
 --------------------------------------------------------------------------------------
