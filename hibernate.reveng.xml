@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+	<table name="SYS_MANAGER" schema="CLW"
+		class="cn.com.cintel.common.pojo.Manager">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="manager" catalog="jsk"
+		class="cn.com.cintel.common.pojo2.Manager">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+<table name="MANIPULATE_LOG" schema="CBXZ"
+	class="cn.com.cintel.common.pojo.ManipulateLog">
+	<primary-key>
+		<generator class="sequence"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

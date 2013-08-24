@@ -1,0 +1,28 @@
+
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <script type="text/javascript">
+  var sm=4;
+  function logout(){
+   setInterval("f();",1000);
+   setTimeout("top.location.href = './index.jsp'",sm*1000)
+   return;
+  }
+  function f(){
+   info.innerHTML="未能获取到您的登录信息<br>";
+   djs.innerHTML="还有"+sm+"秒窗口将自动转向首页！"; 
+   sm--;
+ }
+  
+ </script>
+</head>
+<body onload="logout()">
+ <center>
+  <div style="position:absolute;left:250px;top:150px;font-size: 40;color: #006699;font-weight: 900;font-family: 华文楷体;font-style: italic;">
+  <label id="info"></label>
+  <label id="djs"></label>
+  </div>
+ </center>
+</body>
+</html>
